@@ -40,4 +40,5 @@ WCAG: Web Content Accessibility Guidelines. Hierin staat hoe je het goed kan doe
     -   **Robust**: _Is de techniek achter mijn digitale product semantisch correct opgebouwd?_ Want met screenreaders kun je ook een lijstje krijgen met alle headings, maar als jij een <p> bold maakt en als kopje gebruikt dan staat die er niet tussen.
 -   **De beste tips van allen**: beluister jouw digitale product eens met een schermlezer, gebruik een keer je toetsenbord, en test met je doelgroep!
 
-Voor contact over stage: pim@digitaaltoegankelijk.nl
+<!-- Voor contact over stage: pim@digitaaltoegankelijk.nl -->
+

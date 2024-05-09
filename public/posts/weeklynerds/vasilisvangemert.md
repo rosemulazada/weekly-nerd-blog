@@ -42,3 +42,4 @@ Score only:
 
 -   Pagespeed insights
 -   Lighthouse
+
