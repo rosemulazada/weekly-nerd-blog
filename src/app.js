@@ -13,6 +13,10 @@ const publicDirectoryPath = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../templates/views");
 const partialsPath = path.join(__dirname, "../templates/partials");
 const weeklyNerdPostsPath = path.join(__dirname, "../public/posts/weeklynerds");
+const weeklyNerdMetadataPath = path.join(
+    __dirname,
+    "../public/data/weeklynerds"
+);
 
 // Setup EJS engine and views location
 app.set("view engine", "ejs");
@@ -31,7 +35,7 @@ app.use(express.static(publicDirectoryPath));
  *=============================================**/
 
 app.get("", (req, res) => {
-    res.render("index");
+    res.render("newindex");
 });
 
 app.get("/weeklynerd", (req, res) => {
@@ -40,31 +44,50 @@ app.get("/weeklynerd", (req, res) => {
 
 app.get("/weeklynerd/:post", (req, res) => {
     let post = req.params.post;
-
-    // Remove the ".md" extension if present
-    if (post.endsWith(".md")) {
-        post = post.slice(0, -3);
-    }
+    let postJson = req.params.post;
 
     const markdownFilePath = path.join(weeklyNerdPostsPath, `${post}.md`);
+    const jsonFilePath = path.join(weeklyNerdMetadataPath, `${post}.json`);
 
-    fs.readFile(markdownFilePath, "utf8", (err, data) => {
-        if (err) {
+    Promise.all([
+        new Promise((resolve, reject) => {
+            fs.readFile(markdownFilePath, "utf8", (err, data) => {
+                if (err) {
+                    console.error("Error reading markdown file:", err);
+                    reject(err);
+                    return;
+                }
+                resolve(data);
+            });
+        }),
+        new Promise((resolve, reject) => {
+            fs.readFile(jsonFilePath, "utf8", (err, data) => {
+                if (err) {
+                    console.error("Error reading JSON file:", err);
+                    reject(err);
+                    return;
+                }
+                resolve(JSON.parse(data));
+            });``
+        }),
+    ])
+        .then(([markdownData, jsonData]) => {
+            const html = marked.parse(markdownData);
+            res.render("weeklynerdpost", { html, json: jsonData });
+        })
+        .catch((err) => {
             console.error("Error reading file:", err);
-            return res.status(500).send("Error reading file");
-        }
-        const html = marked.parse(data);
-        res.render("weeklynerdpost", { html });
-    });
+            res.status(500).send("Error reading file");
+        });
 });
 
-app.get('/goals', (req, res) => {
-    res.render('goals.ejs')
-})
+app.get("/goals", (req, res) => {
+    res.render("goals.ejs");
+});
 
-/**======================
+/*======================
  *          404
- *=======================**/
+ *======================**/
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}.`);
