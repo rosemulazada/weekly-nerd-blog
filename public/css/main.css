@@ -1,0 +1,64 @@
+@import '/css/base/_typography.css';
+
+
+:root {
+    --heading-text-light: #242424;
+    --regular-text-light: #262626;
+    --metadata-tags-light: #6b6b6b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100dvh;
+    width: 100dvw;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+
+body {
+    padding: 5vh;
+}
+
+.speaker-container,
+.blogpost {
+    grid-column: 2 / 3;
+}
+
+.speaker-item {
+    display: flex;
+    gap: 2.5%;
+
+    .speaker-img {
+        width: 25%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+    }
+}
+
+.tags-container {
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    margin-block: 2.5%;
+
+    .tag-item {
+        width: min-content;
+        padding: 0.25em 0.5em;
+        margin-block: 1%;
+    }
+}
+
+.speaker-metadata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+.blogpost {
+    margin-block: 5vh;
+}

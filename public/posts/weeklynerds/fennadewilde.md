@@ -1,9 +1,5 @@
-# Fenna de Wilde
 
-14/02
-
-**Fenna de Wilde**
-
+## Who is Fenna?
 -   Creative front end developer
 -   Momenteel werkend bij Bakken en Baeck
 -   Land of Ride (nice inspo website).
