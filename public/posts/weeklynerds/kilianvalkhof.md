@@ -1,14 +1,14 @@
-# Killian Valkhof
+# Kilian Valkhof
 
 07/02: Stop Using JavaScript for That: Moving Features from JavaScript to CSS & HTML.
 
-### Killian
+### Kilian
 
--   Onderdeel van het Electron governance team waarmee je met web development kennis desktop applicaties kunt maken.
--   Met Electron maakt hij ook Polypane!
+- Onderdeel van het Electron governance team waarmee je met web development kennis desktop applicaties kunt maken.
+- Met Electron maakt hij ook Polypane!
 
--   De browser kan meer dan jij kan met js.
--   Volgende keer dat je denkt dat er ergens javascript voor nodig is, check dan of dit ook echt (nogsteeds) waar is.
+- De browser kan meer dan jij kan met js.
+- Volgende keer dat je denkt dat er ergens javascript voor nodig is, check dan of dit ook echt (nogsteeds) waar is.
 
 ### The Rule of Least Power
 
@@ -208,7 +208,7 @@ bram.us/2023/02/12/scroll-driven-animations-cover-flow-2022-10-06-full-stack-eur
 
 ### Reflectie
 
-Killian liet heel veel CSS properties zien waarvan ik helemaal geen idee had dat ze bestonden, en liet ook veel weten over dingen waarmee browser developers mee bezig zijn, en dit maakt me enthausiast om deze dingen bij te houden. Ik had geen idee hoe krachtig CSS eigenlijk kon zijn, en ik heb gemerkt, ook in de korte tijd na zijn weekly nerd presentatie, dat ik hier steeds bewuster van ben wanneer ik iets codeer: ik kijk altijd eerst of het misschien in CSS kan. De quote `Once your learn something, you don't learn it again` is me hierdoor ook erg bijgebleven.
+Kilian liet heel veel CSS properties zien waarvan ik helemaal geen idee had dat ze bestonden, en liet ook veel weten over dingen waarmee browser developers mee bezig zijn, en dit maakt me enthausiast om deze dingen bij te houden. Ik had geen idee hoe krachtig CSS eigenlijk kon zijn, en ik heb gemerkt, ook in de korte tijd na zijn weekly nerd presentatie, dat ik hier steeds bewuster van ben wanneer ik iets codeer: ik kijk altijd eerst of het misschien in CSS kan. De quote `Once your learn something, you don't learn it again` is me hierdoor ook erg bijgebleven.
 
 Al gelijk na zijn presentatie heb ik geexperimenteerd met bijvoorbeeld de container widths/height units, en ik merkte dat ik niet de enige was; ook teamleden tijdens WAFS probeerde dit en andere methoden waarover hij verteld heeft.
 

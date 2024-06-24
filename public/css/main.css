@@ -1,29 +1,51 @@
+/* Base */
+@import '/css/base/_reset.css';
 @import '/css/base/_typography.css';
 
+/* Components */
+@import '/css/components/_blockquote.css';
 
+/* Layout */
+@import '/css/layout/_common.css';
+@import '/css/layout/_goals.css';
+@import '/css/layout/_header.css';
+@import '/css/layout/_footer.css';
+@import '/css/layout/_overlay.css';
+
+/* Pages */
+@import '/css/pages/_weeklynerdhome.css';
+
+/* Root */
 :root {
+    --rosedev-blue: #3943B8;
     --heading-text-light: #242424;
     --regular-text-light: #262626;
     --metadata-tags-light: #6b6b6b;
+
+    --heading-text-dark: rgb(228, 222, 222);
+    --regular-text-dark: rgb(228, 222, 222);
+    --metadata-tags-dark: #bfbfbf;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-html,
-body {
-    min-height: 100dvh;
-    width: 100dvw;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-}
+/* @media (prefers-color-scheme: dark) {
+    body {
+        /* background-color: rgb(20, 20, 20); */
+        /* background-color:#3943B8;
+        color: var(--regular-text-dark);
+    }
 
-body {
-    padding: 5vh;
-}
+    h1, h2, 
+    h3, h4,
+    h5, h6,
+    strong {
+        color: var(--heading-text-dark);
+    }
+
+    .metadata {
+        color: var(--metadata-tags-dark);
+    }
+} */ */
 
 .speaker-container,
 .blogpost {
@@ -44,12 +66,16 @@ body {
 .tags-container {
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
-    margin-block: 2.5%;
+    margin-block: 4.5% 2.5%;
 
     .tag-item {
         width: min-content;
         padding: 0.25em 0.5em;
         margin-block: 1%;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -60,5 +86,6 @@ body {
 }
 
 .blogpost {
-    margin-block: 5vh;
+    margin-block: 2.5vh;
 }
+

@@ -4,10 +4,15 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title><%- metadata.name %></title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark-dimmed.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
         <link rel="stylesheet" href="/css/main.css" />
     </head>
-    <body>
-        <div class="speaker-container">
+    <body class="blogpost-body">
+        <%- include ('../partials/header.ejs') %>
+        <%- include ('../partials/overlay.ejs') %>
+      <div class="speaker-container centered">
             <h1><%- metadata.topic %></h1>
             <div class="speaker-item">
                 <img
@@ -17,29 +22,25 @@
                 />
                 <div class="speaker-metadata">
                     <h3 class="speaker-title">SPEAKER</h3>
-                    <h2><%- metadata.name %></h2>
+                    <h3 class="speaker-name"><%- metadata.name %></h3>
                     <div class="speaker-metadata-tags">
-                        <h3 class="metadata-tag">
-                            <%- metadata.date %> • 3 min read
+                        <h3 class="metadata">
+                            <%- metadata.date %> • <%- estimatedReadingTime %>
                         </h3>
                     </div>
                 </div>
             </div>
             <div class="tags-container">
                 <% metadata.tags.forEach((tag)=> { %>
-                <p class="tag-item"><%-tag%></p>
+                <p class="tag-item metadata"><%-tag%></p>
                 <% }) %>
             </div>
             <p class="desc"><%- metadata.desc %></p>
         </div>
 
-        <div class="blogpost">
-            <blockquote style="box-shadow: inset 3px 0 0 0 #242424; padding-left: 20px;">
-                It's not the load that breaks you down, it's the way you carry
-                it.
-            </blockquote>
-
+        <section class="blogpost centered content">
             <%- blogPost %>
-        </div>
+        </section>
+        <script src="/js/scripts.js"></script>
     </body>
 </html>

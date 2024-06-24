@@ -1,0 +1,154 @@
+.overlay-container {
+    background: var(--rosedev-blue); 
+
+    width: 100%; 
+    height: 100%; 
+
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    z-index: 999;
+    display: block;
+}
+
+.hidden-overlay {
+    display: none;
+}
+
+.left-overlay {
+    background-color: var(--rosedev-blue);
+    color: white;
+
+    width: 50%;
+
+    display: none;
+    flex-direction: column;
+    justify-content: end;
+
+    padding: 2vh 6vw 6vh 4vw;
+}
+
+.left-overlay span {
+    font-size: 9rem;
+}
+
+.left-overlay span:nth-child(2) {
+    font-weight: 600;
+}
+
+.right-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: auto;
+    height: 100%;
+    
+    background-color: var(--rosedev-blue);
+
+    padding: 10vh 6vw 6vh 6vw;
+}
+
+.right-overlay ul {
+    font-family: 'Source Serif 4', 'Georgia', serif;
+}
+
+.right-overlay ul li {
+    list-style: none;
+    border-bottom: 2px solid white;
+
+    padding-block: 2vh 4vh;
+}
+
+.right-overlay ul li:not(:first-child) {
+    padding-top: 6vh;
+}
+    
+.right-overlay ul li a {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    transition: .25s ease-out;
+}
+
+.right-overlay ul li:hover a {
+    padding-right: 2vw;
+}
+
+.right-overlay ul li div {
+    color: white;
+}
+
+.right-overlay ul li div:first-of-type {
+    font-weight: 600;
+    font-size: 8rem;
+}
+
+.contact-container h3,
+.contact-container p {
+    color: white;
+}
+
+.active .bar {
+    background-color: white;
+}
+
+.georgia {
+    font-family: 'Georgia', 'Source Serif 4', serif;
+}
+
+@media (min-width: 768px) {
+    .active .bar {
+        background-color: var(--rosedev-blue);
+    }
+
+    .overlay-container {
+        display: flex;
+    }
+
+    .hidden-overlay {
+        display: none;
+    }
+
+    .left-overlay {
+        display: flex;
+        gap: 2vh;
+    }
+
+    .right-overlay {
+        width: 50%;
+        background-color: white;
+
+        padding: 15vh 4vw 6vh 8vw;
+    }
+
+    .right-overlay ul li {
+        border-bottom: 2px solid var(--rosedev-blue);
+    }
+
+    .right-overlay ul li a {
+        flex-direction: row-reverse;
+    }
+
+    .right-overlay ul li div:first-of-type {
+        color: var(--rosedev-blue);
+    }
+
+    .right-overlay ul li div:last-of-type {
+        color: inherit;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .contact-container h3 {
+        color: var(--rosedev-blue);
+    }
+
+    .contact-container p {
+        color: inherit;
+    }
+}

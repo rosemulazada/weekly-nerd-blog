@@ -10,13 +10,16 @@ body {
     font-weight: 350;
     letter-spacing: -0.003em;
     line-height: 3.2rem;
+    background-color: white;
     color: var(--regular-text-light);
 }
 
-h1, h2, h3,
-h4, h5, h6 {
+h1, h2, 
+h3, h4,
+h5, h6,
+strong {
     font-family: "Helvetica Neue", "Roboto", sans-serif;
-    color: var(--heading-text-light);
+    color: var(--rosedev-blue);
 }
 
 h1 {
@@ -24,6 +27,7 @@ h1 {
     letter-spacing: -0.011em;
     line-height: 52px;
     font-weight: 700;
+    color: var(--rosedev-blue);
     
     margin-block: 2.5vh;
 }
@@ -35,19 +39,62 @@ h2 {
 }
     
 h3 {
+    &.speaker-name {
+        font-size: 24px;
+        letter-spacing: -0.016em;
+        line-height: 2.8rem;
+        color: var(--rosedev-blue);
+    }
+
     &.speaker-title {
         font-size: 22px;
-    }
-    
-    &.metadata-tag {
-        color: var(--metadata-tags-light);
-        font-weight: 400;
-        font-size: 1.6rem;
+        color: var(--regular-text-light);
     }
 }
 
-p.tag-item {
-    font-size: 14px;
+.metadata {
+    font-size: 1.5rem;
+    font-weight:400;
     font-family: "Helvetica Neue", "Roboto", sans-serif;
-    color: var(--metadata-tags-light);
+    color: var(--regular-text-light);
+}
+
+.tag-item {
+    color: var(--rosedev-blue);
+}
+
+.centered-text {
+    text-align: center;
+}
+
+code {
+    font-size: 1.8rem;
+}
+
+figcaption {
+    text-align: center;
+}
+
+ul, ol {
+    list-style-type: square;
+    list-style-position: inside;
+
+    ul, ol {
+        list-style: '⧆';
+        margin-left: 2em;
+
+        ul, ol {
+            list-style: '*';
+            margin-left: .5em;
+        }
+    }
+}
+
+.highlight {
+    /* background: black; */
+    /* color: white; */
+    font-weight: 600;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 2px 5px;
 }

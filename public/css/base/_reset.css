@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100dvh;
+    width: 100dvw;
+}
+
+.padding {
+    padding: 2.5vh 3vw;
+}
+
+.centered.padding {
+    padding: 2.5vh 5vw;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+:focus-visible {
+    outline: 5px solid rgb(255, 85, 0);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :focus-visible {
+        transition: outline-color 0.2s ease-in-out;
+    }
+}

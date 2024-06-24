@@ -1,0 +1,10 @@
+blockquote {
+    box-shadow: inset 3px 0 0 0 #242424;    
+    background: ghostwhite;
+    border-bottom: 1px solid #dfdfe3;
+
+    padding: 2.5vh 5vw;
+
+    text-align: center;
+}
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rose's Weekly Nerd Blog</title>
+        <link rel="stylesheet" href="/css/main.css" />
+    </head>
+    <style>
+        .hero-container {
+            display: flex;
+            width: 100%;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+            width: 100%;
+        }
+
+       
+
+        .title-wrapper {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .background {
+            text-align: left;
+            font-size: 36vw;
+            font-weight: 600;
+            white-space: nowrap;
+            color: #3944b8c8;
+            position: absolute;
+            z-index: 1;
+            font-family: "Helvetica Neue", "Roboto", sans-serif;
+        }
+
+        .content {
+            font-size: 10vw;
+            font-family: 'Source Serif 4';
+            font-weight: 500;
+            color: black;
+            z-index: 2;
+            position: relative;
+            text-align: left;
+            line-height: 1.2;
+        }
+
+        .content section {
+            margin-bottom: 0.24em;
+        }
+
+        .content .word1 {
+            margin-left: 0;
+        }
+
+        .content .word2 {
+            font-size: 11vw;
+            margin-left: 2.5em;
+            /* font-weight: bold; */
+        }
+
+        .content .word3 {
+            margin-left: 7em;
+        }
+
+         @media (min-width: 768px) {
+            .left {
+                width: 60%;
+            }
+
+            .background {
+                font-size: 18vw;
+            }
+
+            .content {
+                font-size: 5vw;
+            }
+
+            .content .word2 {
+                font-size: 6vw;
+            }
+        }
+    </style>
+    <body>
+        <%- include ('../partials/header.ejs') %>
+        <%- include ('../partials/overlay.ejs') %>
+      
+        <main>
+            <section class="hero-container padding">
+                <section class="left">
+                    <section class="title-wrapper">
+                        <section class="background">2024</section>
+                        <section class="content">
+                            <section class="word1">weekly</section>
+                            <section class="word2">nerd</section>
+                            <section class="word3">blog</section>
+                        </section>
+                    </section>
+                    <p style="font-family: 'Source Serif 4'">
+                        A repository of knowledge collected over the course of 6
+                        months. Various speakers of various fields of expertise
+                        grace us with a lecture of all the most important things
+                        their minds have to offer. This is where I document
+                        those findings.
+                    </p>
+                </section>
+            </section>
+            
+            <h2 class="centered-text">My goals</h2>
+            <%- include ('../partials/goals.ejs') %>
+
+            </section>
+        </main>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>
