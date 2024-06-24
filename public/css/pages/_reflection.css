@@ -1,0 +1,22 @@
+.author-container {
+    grid-column: 2 / 3;
+}
+
+.author-item {
+    display: flex;
+    gap: 2.5%;
+}
+
+.author-img {
+    width: 25%;
+    aspect-ratio: 1; 
+    border-radius: 50%;
+    object-fit: cover; 
+    height: auto;
+}
+
+.author-metadata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}

@@ -46,7 +46,7 @@ app.get("/goals", (_req, res) => {
     res.render("goals.ejs");
 });
 
-app.get('/weeklynerd', async (req, res) => {
+app.get('/weeklynerd', async (_req, res) => {
   try {
     const files = await fsPromises.readdir(metadataFolderPath);
     const jsonFiles = files.filter(file => path.extname(file).toLowerCase() === '.json');
@@ -87,6 +87,10 @@ app.get("/weeklynerd/:post", async (req, res) => {
 
 app.get('/goals', (_req, res) => {
     res.render('goals');
+})
+
+app.get('/reflection', (_req, res) => {
+    res.render('reflection');
 })
 
 /*======================

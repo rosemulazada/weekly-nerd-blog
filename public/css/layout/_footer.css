@@ -8,9 +8,48 @@ footer {
     justify-content: center;
 
     padding-block: 3vh;
+    padding-inline: 3vw;
+    margin-top: 6vh;
 }
 
-.author-container {
+.footer-author-container {
+    display: grid;
+    grid-column: 2 / 3;
+    width: 680px;
+}
+
+.footer-author-item {
     display: flex;
-    justify-content: left;
+    align-items: center;
+    gap: 2.5%;
+}
+
+.footer-author-img {
+    width: 15%;
+    aspect-ratio: 1; 
+    border-radius: 50%;
+    object-fit: cover; 
+    height: auto;
+}
+
+.footer-author-metadata {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+@media (min-width: 768px) {
+    footer {
+        padding-inline: none;
+        padding-block: 3vh 10vh;
+    }
+
+    .footer-author-item {
+        display: block;
+    }
+
+    .footer-author-metadata {
+        flex-direction: row;
+        gap: 1ch;
+    }
 }

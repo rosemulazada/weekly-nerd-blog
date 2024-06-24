@@ -14,8 +14,8 @@ body {
     padding: 2.5vh 3vw;
 }
 
-.centered.padding {
-    padding: 2.5vh 5vw;
+.header-padding {
+    padding: 2.5vh 3vw 0 3vw;
 }
 
 a {

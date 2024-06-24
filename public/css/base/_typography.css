@@ -103,4 +103,8 @@ ul, ol {
     body {
         font-size: 2rem;
     }
+
+    h1 {
+        margin-block: 4vh 2.5vh;
+    }
 }

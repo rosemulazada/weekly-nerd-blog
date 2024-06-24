@@ -13,6 +13,7 @@
 @import '/css/layout/_overlay.css';
 
 /* Pages */
+@import '/css/pages/_reflection.css';
 @import '/css/pages/_weeklynerdhome.css';
 
 /* Root */
@@ -55,15 +56,18 @@
 .speaker-item {
     display: flex;
     gap: 2.5%;
+}
 
-    .speaker-img {
-        width: 25%;
-        aspect-ratio: 1;
-        border-radius: 50%;
-    }
+.speaker-img {
+    width: 25%;
+    aspect-ratio: 1; 
+    border-radius: 50%;
+    object-fit: cover; 
+    height: auto;
 }
 
 .tags-container {
+    display: flex;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
     margin-block: 4.5% 2.5%;

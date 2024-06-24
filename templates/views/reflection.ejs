@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rose's Weekly Nerd Blog</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark-dimmed.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <link rel="stylesheet" href="/css/main.css" />
+    </head>
+    <body class="blogpost-body">
+        <%- include ('../partials/header.ejs') %>
+        <%- include ('../partials/overlay.ejs') %>
+
+        <section class="author-container centered padding">
+            <h1>On the minor Web</h1>
+            <section class="author-item">
+                <img
+                    class="author-img"
+                    src="img/rose-mulazada.png"
+                    alt="Photo of Rose Mulazada"
+                />
+                <section class="author-metadata">
+                    <h3 class="author-title">AUTHOR</h3>
+                    <h3 class="author-name">Rose Mulazada</h3>
+                    <section class="author-metadata-tags">
+                        <h3 class="metadata">
+                            26/03 • readingTime TBA
+                        </h3>
+                    </section>
+                </section>
+            </section>
+            <section class="tags-container">
+                <p class="tag-item metadata">tags</p>
+            </section>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit cumque fuga eaque laudantium. Laborum in voluptate repudiandae! Suscipit alias inventore vero consequatur perferendis quidem quod a qui nostrum, quisquam distinctio!</p>
+        </section>
+
+        <section class="centered content padding">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut deserunt fuga sunt est, asperiores porro facere labore aliquid et aperiam praesentium temporibus similique repellendus atque deleniti inventore, optio quibusdam. Iste qui dolor quas nihil dignissimos ad harum quam culpa doloribus!
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In placeat fuga rem harum omnis deleniti animi cupiditate est, quod incidunt sed porro adipisci vitae tempora fugit numquam! Quae, maxime praesentium?
+        </section>
+
+        <%- include ('../partials/footer.ejs') %>
+
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>

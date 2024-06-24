@@ -20,6 +20,7 @@ figure {
 .centered > h2 {
     margin-top: .5em;
 }
+
     
 .centered > h3 {
     margin-top: 1em;   
@@ -56,8 +57,17 @@ p, ul:not(.filter-container), ol {
         max-width: 680px;
     }
 
+
+    .centered-goals {
+        max-width: 680px;
+    }
+
     .centered.padding {
         padding: 0;
+    }
+
+    .centered-goals.padding {
+        padding: 2.5vh 0 0 0;
     }
 
     figure.large {

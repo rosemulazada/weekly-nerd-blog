@@ -12,35 +12,38 @@
     <body class="blogpost-body">
         <%- include ('../partials/header.ejs') %>
         <%- include ('../partials/overlay.ejs') %>
-      <div class="speaker-container centered padding">
+        <section class="speaker-container centered padding">
             <h1><%- metadata.topic %></h1>
-            <div class="speaker-item">
+            <section class="speaker-item">
                 <img
                     class="speaker-img"
                     src="<%- metadata.profilepic %>"
                     alt="Photo of <%- metadata.name %>"
                 />
-                <div class="speaker-metadata">
+                <section class="speaker-metadata">
                     <h3 class="speaker-title">SPEAKER</h3>
                     <h3 class="speaker-name"><%- metadata.name %></h3>
-                    <div class="speaker-metadata-tags">
+                    <section class="speaker-metadata-tags">
                         <h3 class="metadata">
                             <%- metadata.date %> • <%- estimatedReadingTime %>
                         </h3>
-                    </div>
-                </div>
-            </div>
-            <div class="tags-container">
+                    </section>
+                </section>
+            </section>
+            <section class="tags-container">
                 <% metadata.tags.forEach((tag)=> { %>
                 <p class="tag-item metadata"><%-tag%></p>
                 <% }) %>
-            </div>
+            </section>
             <p class="desc"><%- metadata.desc %></p>
-        </div>
+        </section>
 
         <section class="centered content padding">
             <%- blogPost %>
         </section>
+
+        <%- include ('../partials/footer.ejs') %>
+
         <script src="/js/scripts.js"></script>
     </body>
 </html>
