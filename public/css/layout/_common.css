@@ -37,7 +37,7 @@ figure {
     margin-top: .5em;
 }
 
-p, ul, ol {
+p, ul:not(.filter-container), ol {
     margin-block: .5em .25em;
 }
 
