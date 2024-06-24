@@ -12,7 +12,7 @@
     <body class="blogpost-body">
         <%- include ('../partials/header.ejs') %>
         <%- include ('../partials/overlay.ejs') %>
-      <div class="speaker-container centered">
+      <div class="speaker-container centered padding">
             <h1><%- metadata.topic %></h1>
             <div class="speaker-item">
                 <img
@@ -38,7 +38,7 @@
             <p class="desc"><%- metadata.desc %></p>
         </div>
 
-        <section class="blogpost centered content">
+        <section class="blogpost centered content padding">
             <%- blogPost %>
         </section>
         <script src="/js/scripts.js"></script>
