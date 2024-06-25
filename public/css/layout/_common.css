@@ -39,7 +39,7 @@ figure {
 }
 
 p, ul:not(.filter-container), ol {
-    margin-block: .5em .25em;
+    margin-block: .75em .25em;
 }
 
 /* Larger than a tablet */

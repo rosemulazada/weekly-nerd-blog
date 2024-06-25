@@ -28,7 +28,7 @@ You don't tell the computer exactly what to do; you specify the output you want 
 
 Why do some people choose to write such complex code rather than using what we have natively? It’s about exercising control. Imagine disabling a button; oh, now the button gets a styling I didn’t specifically tell it to have? This now feels like a bug.
 
-**Even with a declarative language like CSS, you can introduce imperative thinking. **
+**Even with a declarative language like CSS, you can introduce imperative thinking.**
 For example, giving a `padding/font-size:1rem;` instead of using `px`; now you’re making an exchange with the language. Instead of saying `padding-left:1rem;` when you want to add padding on the side where the text starts, you can say `padding-inline-start`. This will make it consistent no matter what direction the language used is read from. Or for example, using `clamp`: you can’t say what font-size an element should have at a certain screen-width, but you know it’s going to look good, because you’ve told it to never get smaller/bigger than a specified amount. So you’ve relinquished control, on your own terms.
 
 Another example is `vw`, a dangerous unit because it remains the same no matter what. You can improve this slightly with `clamp`.

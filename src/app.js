@@ -12,7 +12,6 @@ import express from 'express';
 import * as marked from 'marked';
 import readingTime from 'reading-time';
 
-
 const app = express();
 const port = process.env.PORT || 2324;
 
@@ -98,8 +97,5 @@ app.get('/reflection', (_req, res) => {
  *======================**/
 
 app.listen(port, () => {
-    console.log(`Server running on port ${port}.`);
+    console.log(`Server running on port http://localhost:${port}.`);
 });
-
-// TODO: See if this is necessary?
-// module.exports = app;
