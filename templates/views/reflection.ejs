@@ -15,10 +15,35 @@
         }
 
         .badum-tss {
+            position: relative;
             color: var(--rosedev-blue);
             text-decoration: underline;
             cursor: pointer;
+        }   
+
+    
+        .badum-tss::before {
+            content: '';
+            display: block;
+            position: absolute;
+            background-image: url('https://media1.tenor.com/m/Va9M6DvKygYAAAAC/ba-dum-tsss-drum.gif');
+            background-size: cover;
+            background-position: center;
+            width: 100px;
+            height: 100px;
+            bottom: 100%;
+            right: 100%;
+            /* transform: translateX(-50%); */
+            opacity: 0;
+            transition: opacity 0.3s ease;
+
         }
+
+            .show-badum-tss::before {
+            opacity: 1; /* Show pseudo-element */
+            }
+
+    
     </style>
     <body class="blogpost-body">
         <%- include ('../partials/header.ejs') %>
@@ -53,7 +78,7 @@
                 Where to begin as we recap the past five or six months? I wouldn't know. It's been such a ride, an amazing one, with so many great memories and lessons that I hardly know what to say. But I'll do my best.
             </p>
             <p>
-                Before I started this minor, before I ever signed up for it, I knew that it was undoubtedly the best opportunity to learn as a front-end developer. My passion had just recently ignited itself, especially following my experience at the minor Information Design on the Tech course, where I got my first taste of frameworks and API's, npm packages, libraries like D3.js and the like. Still, the assignment that we had wasn't your ordinary developer work. And besides, I barely understood what I was really doing. I needed more. I needed to get the <em>real</em> experience. I wanted to learn so, so much more than I knew then. And I knew that this was the right choice for achieving that.
+                Before I started this minor, before I ever signed up for it, I knew that it was undoubtedly the best opportunity to learn as a front-end developer. My passion had just recently ignited itself, especially following my experience at the minor Information Design on the Tech course, where I got my first taste of frameworks and API's, npm packages, libraries like D3.js and the like. Still, the assignment that we had wasn't your ordinary developer work. Besides, I barely understood what I was really doing. I needed more. I needed to get the <em>real</em> experience. I wanted to learn so, so much more than I knew then. And I knew that this was the right choice for achieving that.
             </p>
             <p>
                 As I mentioned before, I had once previously worked with SvelteKit, with NPM and all these things. But I have to say I was absolutely clueless when it came down to it. I was beginning to understand, kind of, but my understanding of the foundation was weak and thus I didn't really know what it was that I was doing or why it worked. What were methods? What were different types of variables, like strings and integers? What is the difference? What's a <code>GET</code>, <code>POST</code>, hell, what even is a <code>.env</code>? Or <code>Git</code>? I was absolutely lost. I needed a thorough understanding of the foundation to get anywhere. So this was my goal by signing up for the minor Web Design and Development.
@@ -67,9 +92,11 @@
             <p>This is what my teacher described to me as the <span class="highlight">Dunning-Kruger effect:</span> <em>The Dunning–Kruger effect is a cognitive bias in which people with limited competence in a particular domain overestimate their abilities.</em></p>
             <figure class="large">
                 <img style="width:100%; aspect-ratio: auto 1000 / 667; height: auto;" alt="A graph visualising the Dunning-Kruger effect." class="bg ku mg c"loading="eager" src="https://i.pinimg.com/736x/e3/28/97/e328977b031a0128cab8cd9a16f3b13d.jpg">
-                <figcaption class="metadata">The Dunning-Kruger Effect: Visualised</figcaption>
+                <figcaption class="metadata">The Dunning-Kruger Effect: Visualized</figcaption>
             </figure>
-            <p>Looks cool, doesn't it? Yeah, until you read it. Owch. Of course, he didn't mean it that way, but I went home thinking about this a lot. And after some time, it actually gave me faith. I recognise that I know little of development. But my (former..) confidence has to mean something, right? It means that I'm passionate (passionately stupid maybe haha <span onclick="badumTss()" class="badum-tss">badum tss</span>).  No but seriously.</p>
+            <p>Looks cool, doesn't it? Yeah, until you read it. Owch. Of course, he didn't mean it that way, but I went home thinking about this a lot. And after some time, it actually gave me faith. I recognise that I know little of development. But my (former..) confidence has to mean something, right? It means that I'm passionate (passionately stupid maybe haha <span onclick="badumTss()" class="badum-tss">badum tss</span>).  No but seriously. Did it not speak to my enthusiasm and my determination? I certainly felt determined after this, in any case. And so, when the other two subjects started, I tried my best to adhere to the best practices and to learn.
+            </p>
+
         </section>
 
         <%- include ('../partials/footer.ejs') %>
@@ -77,9 +104,18 @@
         <script src="/js/scripts.js"></script>
         <script>
             function badumTss() {
-                var audio = new Audio('/audio/badum-tss.mp3');
+                const audio = new Audio('/audio/badum-tss.mp3');
                 audio.play();
+
+                const badumTssElement = document.querySelector('.badum-tss');
+
+                badumTssElement.classList.add('show-badum-tss');
+
+                audio.addEventListener('ended', () => {
+                    badumTssElement.classList.remove('show-badum-tss');
+            });
             }
+
         </script>
     </body>
 </html>
