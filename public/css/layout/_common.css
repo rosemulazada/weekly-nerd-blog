@@ -14,6 +14,7 @@ body {
 
 figure {
     margin-top: 5vh;
+    padding: 1vh 0;
 }
 
 .centered > :first-of-type:not(h3, ol, ul, p:not(.desc), h1, pre, h4, blockquote),
