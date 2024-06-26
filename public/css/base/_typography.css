@@ -39,6 +39,8 @@ h2 {
 }
     
 h3 {
+    font-size: 2.2rem;
+
     &.speaker-name {
         font-size: 2.4rem;
         letter-spacing: -0.016em;
@@ -50,6 +52,10 @@ h3 {
         font-size: 2.2rem;
         color: var(--regular-text-light);
     }
+}
+
+h4 {
+    margin-top: .75em;
 }
 
 .metadata {

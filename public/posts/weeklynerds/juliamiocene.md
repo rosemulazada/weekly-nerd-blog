@@ -1,4 +1,3 @@
-# Julia Miocene
 I'm certain I can speak for everybody at this minor when I say we were fascinated by her work. We knew that so much was possible in CSS, but Julia pushes the boundaries of what we ever thought was feasible, and the funny part is that she explained it in a way that made it look so easy and made us enthusiastic about giving it a shot ourselves.
 
 ## The building blocks
@@ -12,6 +11,6 @@ Julia told us that she breaks down the animations she makes into building blocks
 - Volume: This is more of an animation principle. Consider the volume in space when animating, especially when rotating an item or charracter. When a person turns their head, the eyes will turn separately from the nose, and faster.
 
 ## The conclusion
-I was so fascinated listening to her that I didn't write much down, and as I looked around me during the presentation I realised the same was true for most others. She displayed some of her work, all of which I loved, but one that stood out to me in particular was **the oases in which young eyes see new paths.** Truly an incredible work. I'm in love with little indie games that resemble this style and have played many myself, so to see someone make a similar type of work in a medium I love was breath-taking. Julia's work is something else entirely.
+I was so fascinated listening to her that I didn't write much down, and as I looked around me during the presentation I realised the same was true for most others. She displayed some of her work, all of which I loved, but one that stood out to me in particular was **the oases in which young eyes see new paths.** Truly an incredible work. I'm in love with little indie games that resemble this style and have played many myself, so to see someone make a similar type of work in a medium I love was breath-taking. Julia's work is something else entirely. She inspired me to also want to try this out, although I'll never be able to make what she does, maybe I can get a little noodle arm done.
 
 

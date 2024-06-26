@@ -15,3 +15,7 @@ A rule is we can’t change a container that we’re querying, because this caus
 Another rule is that you have to turn off intrinsic sizing which can be pretty dangerous.
 
 If your box collapses, your code is probably relying on something intrinsic which is making it keep its shape instead of the extrinsic thing you specified.  
+
+## Reflection
+This is a problem I've found myself running into so often, so to hear someone speaking about it felt nice. Good to know I wasn't just messing up CSS up to so bad that it broke the sizing of elements on my web-page; this is a legitimate concept to keep in mind when developing. 
+I had experience with this problem but did not exactly know what could cause it or rather what could prevent it. I've taken her suggestion of CSS reset with me in my newer project as a preventive measure. The way she speaks and explains things is so easy to follow for me, and the way she demonstrated for us in the app helped as well. An amazing talk!

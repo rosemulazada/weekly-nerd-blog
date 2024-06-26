@@ -13,7 +13,7 @@ When the page loads, it takes a snapshot of the page that it remembers. Undernea
 It’s this line in the user agent stylesheet:
 
 
-```css
+```
 /* The old and new snapshots get layered over one another */
 :root {
     view-transition-name: root;
@@ -71,3 +71,12 @@ Meaning: block rendering until X element is on the page! That means that the ele
 ```html
     <link render=”blocking” />
 ```
+
+## Reflection
+What an amazing experience to receive a lecture from a developer at Google. As soon as I heard this I got excited. This is not an opportunity you receive often. Especially the fact that he told us about something that would be rolling in the next week after this lecture, I couldn't believe what I was hearing!
+
+View transitions are not something that I've personally worked with, but naturally I've heard of it plenty of times. I have to say that I found myself telling Brianne, who was seated beside me, that I was itching to make something using this soon. I still feel this way, and I believe that once I've finished off the meesterproef, I will take a look into it.
+
+I did find it kind of difficult to understand as I was sitting there but seeing the amazing works made by it (made visual by the useful, neat CodePens he shared with us) made my enthusiasm grow.
+
+Who knows, maybe whenever I _do_ start that blog, you'll see an article about this appear.

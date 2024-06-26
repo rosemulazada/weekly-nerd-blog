@@ -43,11 +43,12 @@ Other ways to achieve this are:
 -   `min-content` and `max-content`
 -   `repeat()`
 -   `minmax()`
-
--   [utopia.fy](link)
--   [youtube.com/layoutland](link)
--   [every-layout.dev](link)
--   [buildexcellentwebsit.es](link)
+<br>
+<br>
+- <a href="https://utopia.fyi/type/calculator/" class="hyperlink">Utopia</a>
+- <a href="https://www.youtube.com/@LayoutLand" class="hyperlink">Layout land on YouTube</a>
+- <a href="https://every-layout.dev/" class="hyperlink">Every layout</a>
+- <a href="https://buildexcellentwebsit.es/#:~:text=Build%20Excellent%20Websites-,Be%20the%20browser's%20mentor%2C%20not%20its%20micromanager.,device%2C%20connection%20quality%20and%20capabilities." class="hyperlink">Build Excellent Websit.es</a>
 
 ### So… declarative > imperative..?
 
@@ -68,14 +69,16 @@ So, make sure the team you work in matches you.
 **Analytical thinking vs systems thinking**
 Analytical thinking is about zooming in, and would be the equivalent of imperative thinking. Think of Figma stylesheets with exact color codes. Systems thinking is about zooming out, and matches declarative thinking more.
 
-### The conclusion
+### Reflection
 
-> The more you tighten your grip, the more you lose control.
 
 Jeremy has a preference for declarative programming, despite saying that ‘it depends’ - because it does: it’s personal. So you should strive to work in environments that suit your workflow.
 He argues most of all that you should do this, but he does advocate for declarative programming, saying that the less control you have, the lesser your chances of things going wrong - HTML/CSS are the foundation for the web for a reason; we are meant to be able to rely on them rather than reach for JavaScript for everything. HTML elements/CSS properties are built to encapsulate a lot of the needs of the developer, it exists to be used to its full capacity. Usually, there will be something of a native solution or at least building block for what you want to achieve, and this is a lot more secure than using pure JavaScript, which is meant to be the solution to when you can no longer achieve your goal with just HTML/CSS.
 
+> The more you tighten your grip, the more you lose control.
+
+
 JavaScript should do what only JavaScript can do. Another quote to live by.
 
--   [a dao of web design](link)
--   [responsive web design](link)
+**Sources**
+- <a href="https://alistapart.com/article/dao/" class="hyperlink">a dao of web design</a>

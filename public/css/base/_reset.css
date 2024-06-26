@@ -11,7 +11,7 @@ body {
 }
 
 .padding {
-    padding: 2.5vh 3vw;
+    padding: 1.5vh 3vw;
 }
 
 .h1-padding {
@@ -45,6 +45,15 @@ button {
     outline-offset: 4px;
 }
 
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+p:has(code, a) {
+    display: inline-block;
+}
 
 @media (prefers-reduced-motion: no-preference) {
     :focus-visible {

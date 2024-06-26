@@ -1,45 +1,52 @@
-# Accessibility Tools: Vasilis van Gemert
+## Accessibility Tools: Vasilis van Gemert
 
-De allerbelangrijkste tool is dat je moet ontwerpen; vooral developers, want die willen gewoon developen. Er zijn veel dingen waar veel mensen niet over nadenken, waarover een developer heel goed kan nadenken. Er zijn dingen waarvan developers al snel kunnen zien dat iemand daar niet aan heeft gedacht.
+The most important tool is that you have to design; especially developers, because they just want to develop. There are many things that many people don't think about, that a developer can think about very carefully. There are things that developers can quickly see that someone hasn't thought of.
 
-Alle websites moeten toegankelijk zijn van de wet. Het moet voldoen aan de WCAG: Web Content Accessibility Guide.
+All websites must be accessible by law. It must comply with the WCAG: Web Content Accessibility Guide. 99% of websites contain invalid HTML, so almost all WebDevs do not understand semantics, but still call themselves developers.
 
-Dit zijn dingen die developers zelf moeten doen.
+How do you really check whether a website is accessible?
 
--   Ontwerpen
--   WCAG kennen en begrijpen
--   Overal doorheen tabben
--   Let op dat..
-    -   het in de goede volgorde tabt
-    -   je niet ergens vast komt te zitten
-    -   je ziet waar je tabt
+### These are things developers have to do themselves.
 
-Screenreader(s) gebruiken: ze kunnen niet allemaal hetzelfde!
+-   To design
+- Know and understand WCAG
+- Tabbing through everything
+-   Be aware that..
+ - tab it in the right order
+ - you don't get stuck somewhere
+ - you see where you tab
 
--   VoiceOver (Twee versies of meer: Mac/iOS)
--   Narrator
--   TalkBack
--   NVDA
+## Use of screen readers: they can't all do the same thing!
+There are different types of screen readers and not all of them do the same thing. Try to use several to get a good idea of ​​how accessible your website is;
+- VoiceOver (Two versions or more: Mac/iOS)
+- Narrator
+- TalkBack
+- NVDA
 
-In- en uitzoomen (+200%, +500%)
+## Zoom in and out (+200%, +500%)
+By zooming in and out to values ​​like 200-500%, you really get a good idea of ​​how good the site's scalability is.
 
--   Reduce motion
--   Light/dark mode
--   High contrast
+## Visual: what should I pay attention to?
+- **Reduce motion**: Always implement this option if your website contains a lot of movement!
+- **Light/dark mode**: This has now become a standard for the web.
+- **High contrast**
 
-99% van de websites bevatten niet-valide HTML, dus bijna alle WebDevs begrijpen het niet en noemen zich developers.
 
 ## Tools
+There's a handful of accessibility tools out there, but some of them operate on a score-only basis. This means that people check if they get a high number and if they do, they're satisfied. But this does not give you any insight into how accessible your website really is, and often time, people use these score-only websites just so they can meet the bare-minimum of the WCAG, if even that.
 
--   Headingsmap ipv Screenreader
--   WAVE.. but it’s very confusing..
--   Axe DevTools
--   VisBug
--   Accessibility Insights
--   ARC (not the browser, lol)
+### Valuable tools
+- Heading folder instead of Screen Reader
+- Ax DevTools
+- VisBug
+-Accessibility Insights
+- ARC (not the browser, lol)
 
-Score only:
+### Score-only tools
 
--   Pagespeed insights
--   Lighthouse
+- Page speed insights
+- Lighthouse
 
+## Reflection
+I've used tools like Lighthouse out of curiosity before, but I always felt like it was inaccurate, especially after the 'shitty website' exercise, where I got a really high score. It clicked for me then. It _is_ inaccurate. It _is_ score only. When Vasilis explained this it really put into perspective for me why so much of the web is inaccessible. People don't bother to learn and it is a shame.
+It was good to hear from someone as deeply learned about the importance of accessibility as Vasilis what is and what isn't a good way to evaluate the accessibility of your site. I've got some of these extensions downloaded, to have on hand when I'm next trying to develop something new. He also showed us how some of these work, which was really insightful.

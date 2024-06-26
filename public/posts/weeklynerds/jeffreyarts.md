@@ -9,3 +9,8 @@ He approaches deployment as something that is not directly related to front-end 
 He makes extensive use of frameworks, but at the same time attaches great importance to understanding the basic principles, such as vanilla JavaScript. He consciously chooses not to always use frameworks such as React with JSX, because he wants to follow his own working methods and preferences.
 
 His <a href="https://perception.jeffreyarts.nl/" class="hyperlink">toolbox workflow</a> is focused on creating his own ecosystem, sticking to core technologies as much as possible. For him, development not only means efficiency, but also a trade-off between costs and benefits.
+
+## Reflection
+I was inspired by the way he utilises a toolkit he wrote by himself, for himself, where he has a sort of boilerplate of all the things he knows he likes to use. He runs it from the terminal and can easily start up a new project without having to manually set up the framework and packages of use. I've something like this only not quite as technical; I literally just made an Express app with the structure I prefer (using CSS components and the like) and saved a blank copy of this on my device under a folder called 'templates' that I duplicate. This already has the server set up and all as well.
+
+I find myself a lot in his desire to find what works _for him._ I wish to achieve this myself and I'd hope to also be able to write something like his terminal script.

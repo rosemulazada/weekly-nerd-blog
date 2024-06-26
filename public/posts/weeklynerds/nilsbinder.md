@@ -62,3 +62,6 @@ Mostly pixels, including fixed and viewport-based units. Additionally, container
 
 **Grid Layout:**
 Proposes transforming relationships between margins and paddings into a grid layout instead of specifying pixel values.
+
+## Reflection
+Nils is amazing at what he does, the way he thinks about containers is truly inspiring and thus it was nice to hear that he was going to be speaking about this. Speaking with him during his time at the AUAS changed my perspective of how we can utilize containers to our need and he opened my eyes to all that CSS is truly capable of. The scalability of the websites he builds is something I aspire to be able to do myself. I had no idea you could make layouts like this in code. Amazing!

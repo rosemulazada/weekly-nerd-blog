@@ -12,14 +12,22 @@ footer {
     margin-top: 6vh;
 }
 
-.footer-author-container {
+/* .footer-author-container {
     display: grid;
     grid-column: 2 / 3;
+    justify-items: center;
     width: 680px;
-}
+} */
 
 .footer-author-item {
     display: flex;
+    align-items: center;
+    gap: 2.5%;
+}
+
+.footer-author-content {
+    display: flex;
+    justify-content: left;
     align-items: center;
     gap: 2.5%;
 }
@@ -38,18 +46,15 @@ footer {
     gap: 0;
 }
 
+#github {
+    color: var(--rosedev-blue);
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+
 @media (min-width: 768px) {
     footer {
         padding-inline: none;
         padding-block: 3vh 10vh;
-    }
-
-    .footer-author-item {
-        display: block;
-    }
-
-    .footer-author-metadata {
-        flex-direction: row;
-        gap: 1ch;
     }
 }

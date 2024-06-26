@@ -34,3 +34,16 @@ WCAG: Web Content Accessibility Guidelines. These outline how to do it right and
 - **The Best Tips of All**: Listen to your digital product with a screen reader, use your keyboard, and test with your target audience!
 
 <!-- For internship contact: pim@digitaaltoegankelijk.nl -->
+
+# Reflection
+Wow. I feel like as CMD students we know a lot about accessibility but I feel like with every lecture we receive about accessibility, I realize more and more that I have so much more left to learn. 
+Digitaal Toegankelijk named some situations that I would have never thought of myself where keeping the accessibility in mind is crucial. An example of this is the cases of temporary disabilities, for example this; 
+
+I want to watch a video while listening to my music, but still get what's happening in the video, so I read the captions.
+
+There is so much more to keep in mind than we think. It's not just colorblindness and screenreaders. It's audio, it's flashing content, it's avoiding auto-play for video's on a website. All of these are equally important. 
+
+I even reached out about the possibility of an internship because of how inspired I felt. However, I learned that the internship primarily involves writing accessibility reports for websites and similar tasks, rather than the software development experience I am currently seeking. I heavily recommend taking a look at an internship though, for those who are interested! 
+
+Digitaal Toegankelijk opened my eyes to a new world of accessibility and I hope to be part of it, wherever I go.
+

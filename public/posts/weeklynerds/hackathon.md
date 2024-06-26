@@ -27,4 +27,4 @@ This project, I won't lie, was stressful.. but very pleasing at the same time. I
 
 Nonetheless, this project is something I'm proud of. I'm thankful for the experience, I'm thankful for the amazing team I had because of which we actually ended up never having any merge conflicts whatsoever, we didn't win but I don't care because I could feel how enthusiastic we all were about what we had learned and managed to get done in such a brief span of time.
 
-If you're curious about how it ended up working, you can find the live version [here at CSS Day-ta!](https://cssdayta.vercel.app/)
+If you're curious about how it ended up working, you can find the live version <a href="https://cssdayta.vercel.app/" class="hyperlink">here at CSS Day-ta</a>!

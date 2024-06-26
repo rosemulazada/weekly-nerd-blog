@@ -16,14 +16,14 @@ figure {
     margin-top: 5vh;
 }
 
-.centered > :first-of-type:not(h3, ol, ul, p:not(.desc), h1, pre),
+.centered > :first-of-type:not(h3, ol, ul, p:not(.desc), h1, pre, h4, blockquote),
 .centered > h2 {
-    margin-top: 2em;
+    margin-top: 1.5em;
 }
 
     
 .centered > h3 {
-    margin-top: 1em;   
+    margin-top: .75em;   
 }
 
 .centered > h3 + ul,
@@ -38,11 +38,14 @@ figure {
     margin-top: .5em;
 }
 
-p:not(ul > p) {
+p + p, 
+h2 + p,
+blockquote + p,
+h3 + p {
     margin-block: .75em .25em;
 }
 
-ul:not(.filter-container), ol {
+ul:not(.filter-container, header nav ul), ol {
     margin-block: 0em .75em;
 }
 
@@ -52,7 +55,7 @@ ul:not(.filter-container), ol {
         padding: 0;
     }
 
-    .centered > :first-of-type:not(h3, ol, ul, p:not(.desc), h1, pre),
+    .centered > :first-of-type:not(h3, ol, ul, p:not(.desc), h1, pre, h4, blockquote),
     .centered > h2 {
         margin-top: 2em;
     }
