@@ -1,21 +1,11 @@
-# Jeffery Arts
+In his view, he views the backend and frontend as two separate worlds, each with their own complexity and underlying systems. Within the Front-end world, for example, is deployment, which in turn consists of various components such as Git, NPM, .env, ChatGPT, Bash, and Yarn.
 
-**Artist**
-**Designer**
-**Front-end developer**
+He approaches deployment as something that is not directly related to front-end development, but at the same time is essential for the entirety of his work. Within this domain he sees two distinct 'bubbles':
 
-Hij ziet backend en frontend als twee eigen werelden, met allerlei kleinere werelden erin. In Front-end heb je deployment > in deployment heb je git, NPM, .env, chatGPT, bash, yarn, etc.
+**Localhost deployment with pa2**: He uses his own script with which he can get a website online within two minutes. He is very proud of this. His main goal is to personalize his working method so that it works optimally for him.
 
-Hij wil het hebben over deployment: iets wat niets met front-end development te maken heeft, maar volgens hem tegelijkertijd ook alles.
+**Server deployment with Yarn**: Here he uses his own tools and workflows to bring his developed projects to production.
 
-Hierin heb je nog twee bubbels.
+He makes extensive use of frameworks, but at the same time attaches great importance to understanding the basic principles, such as vanilla JavaScript. He consciously chooses not to always use frameworks such as React with JSX, because he wants to follow his own working methods and preferences.
 
--   :localhost: deployment met pa2
--   :server: deployment met yarn
-    Hij heeft zijn eigen scriptje bedacht waarmee hij binnen twee minuten een website online kan krijgen. Hier is hij heel trots op, en zijn hoofddoel is om zijn manier van werken te personaliseren, om een manier te vinden die voor hem werkt.
-
-Hij maakt veel gebruik van frameworks maar hij benadrukt het belang van het leren van de basis, zoals vanilla JavaScript: hij kiest ook expres niet voor bijvoorbeeld React met JSX omdat hij dat niet fijn vindt en op zijn eigen manier wilt werken.
-
-[Toolbox workflow](https://perceptie.jeffreyarts.nl/)
-‘Creëer je eigen ecosysteem, stick to core technologies as much as possible.’
-Development != Efficiency / Costs
+His <a href="https://perception.jeffreyarts.nl/" class="hyperlink">toolbox workflow</a> is focused on creating his own ecosystem, sticking to core technologies as much as possible. For him, development not only means efficiency, but also a trade-off between costs and benefits.

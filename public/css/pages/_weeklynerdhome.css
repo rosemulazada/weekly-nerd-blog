@@ -37,11 +37,11 @@
 .post-item * {
     position: relative;
     z-index: 2;
-    color: #c9d4f4;
+    color: #eaedff;
 }
 
 .post-item-highlight {
-    color: #f2f4fd;
+    color: #f9faff;
 }
 
 @media (min-width: 480px) {

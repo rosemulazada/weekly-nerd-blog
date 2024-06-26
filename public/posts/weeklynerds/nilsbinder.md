@@ -1,51 +1,32 @@
-# Nils Binder
+## 9elements:
 
-Before I even start with the blog on Nils Binder, I just want to state how fascinated I was with his work during the period that he taught us during CSS to the Rescue. He had a clever way of thinking about things, his designs are something I admire and I truly learned a lot from him and his workshops. That aside, just speaking to him was nice, too!
+At 9elements, they work with different units which Nils tells us about briefly. Nils is head of the web development unit.
 
-06.03
+### Company Formation
 
-### 9elements:
+Three people wanted to form a company. "3 Elements" was taken, so they chose "9elements" as the next available URL.
 
--   **Different Units:**
-    -   Nils is head of the web development unit.
+### Units within the Company
 
-### Company Formation:
+**Communication Design**: Focuses on corporate identity and printwork such as logos. Non-coding designers collaborate closely with Nils. The team consists of 4 people.
 
--   **3 People Wanted to Build a Company:**
-    -   "3 Elements" was taken, so they chose "9elements" as the next available URL.
+**Product Development**: Manages projects like banking apps, photobook software for the LA County Museum of Arts, and data visualization. The unit is staffed by 30 people.
 
-### Units within the Company:
+**Web Development Unit**: Responsible for small to medium-sized websites. The team comprises 7 people.
 
-1. **Communication Design:**
+**Cybersecurity**: Mainly engaged in firmware development rather than cybersecurity.
 
-    - Focuses on corporate identity, printwork (logos, etc.).
-    - Non-coding designers work closely with Nils.
-    - Consists of 4 people.
+## The Wrapper Element (Container):
 
-2. **Product Development:**
-
-    - Projects include banking apps, photobook software for the LA County Museum of Arts, data visualization, etc.
-    - Staffed by 30 people.
-
-3. **Web Development Unit:**
-
-    - Handles small to medium-sized websites.
-    - Comprised of 7 people.
-
-4. **Cybersecurity:**
-    - Primarily involved in firmware development, not cybersecurity.
-
-### The Wrapper Element (Container):
-
-#### Main Functions:
+**Main Functions**
 
 -   Sets max-width for content to prevent it from becoming too wide.
 -   Adds padding to prevent content from reaching the edges of the browser.
 -   Centers content in most cases, maintaining equal spacing on both sides.
 
-#### Building a Container:
+### Building a Container:
 
-1. **Old School:**
+**Old School:**
 
     ```css
     .wrapper {
@@ -74,15 +55,10 @@ Before I even start with the blog on Nils Binder, I just want to state how fasci
 ### Design Consistency:
 
 **Reasoning:**
-
--   Figma closely mimics CSS, offering control similar to coding.
--   Sometimes, relinquishing control to the browser for decisions like element breaking or text wrapping may be beneficial.
+Figma closely mimics CSS, offering control similar to coding. Sometimes, relinquishing control to the browser for decisions like element breaking or text wrapping may be beneficial.
 
 **Available Units in Figma:**
-
--   Mostly pixels, including fixed and viewport-based units.
--   Additionally, container queries are available.
+Mostly pixels, including fixed and viewport-based units. Additionally, container queries are available.
 
 **Grid Layout:**
-
--   Proposes transforming relationships between margins and paddings into a grid layout instead of specifying pixel values.
+Proposes transforming relationships between margins and paddings into a grid layout instead of specifying pixel values.

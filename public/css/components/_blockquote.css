@@ -8,3 +8,7 @@ blockquote {
     text-align: center;
 }
 
+.blockquote-left {
+    text-align: start;
+}
+

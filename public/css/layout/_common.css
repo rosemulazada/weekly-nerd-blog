@@ -16,7 +16,7 @@ figure {
     margin-top: 5vh;
 }
 
-.centered > :first-of-type:not(h3, ol, ul, p:not(.desc)),
+.centered > :first-of-type:not(h3, ol, ul, p:not(.desc), h1, pre),
 .centered > h2 {
     margin-top: 2em;
 }
@@ -38,8 +38,12 @@ figure {
     margin-top: .5em;
 }
 
-p, ul:not(.filter-container), ol {
+p:not(ul > p) {
     margin-block: .75em .25em;
+}
+
+ul:not(.filter-container), ol {
+    margin-block: 0em .75em;
 }
 
 /* Larger than a tablet */
@@ -48,7 +52,7 @@ p, ul:not(.filter-container), ol {
         padding: 0;
     }
 
-    .centered > :first-of-type:not(h3, ol, ul, p:not(.desc)),
+    .centered > :first-of-type:not(h3, ol, ul, p:not(.desc), h1, pre),
     .centered > h2 {
         margin-top: 2em;
     }
@@ -72,7 +76,7 @@ p, ul:not(.filter-container), ol {
 
     figure.large {
         width: 100%;
-        padding: 0 8vw;
+        padding: 0 4.5vw;
 
         /* > */
     }

@@ -1,44 +1,36 @@
-# Digitaal Toegankelijk
+**Who wants to be excluded?**
+**A good question to ask yourself when designing. We can experience the same challenges as people with disabilities,** but for us, these challenges are situational.
 
--   **Pim**: Mede-oprichter
--   **Marieke**: Onderzoeker. Oud-student CMD. Afgestudeerd over toegankelijkheid bij Active Collective.
+1. I want to watch a video while listening to my music, but still get what's happening in the video, so I read the captions.
+2. I can't see anything because the sun is shining on my screen.
+3. Cognitive impairment due to, for example, medication for clinical depression.
 
-Doen dingen met digitale toegankelijkheid. Vijf jaar geleden begonnen vanuit een design agency (roots in app/web dev en UX design) met de vraag hoe je echt toegankelijk kunt developen. Dit doen zij nu met een team van acht mensen.
+There are also people with permanent disabilities. Think, for example, of people with ADHD.
 
-**Wie wilt er buitengesloten worden?**
-**Een goede vraag om jezelf te stellen als je aan het ontwerpen bent. Wij kunnen dezelfde lasten meemaken als mensen met een beperking,** alleen zijn deze bij ons situationeel.
+When designing, think about who you might have chosen to exclude. You might consciously choose to use a GIF that isn't safe for people with epilepsy because "it's just fucking cool," as Pim put it. Yeah, basically that. It's something every designer/developer faces, and Pim tells us we're not alone in this; there are hardly any websites you can say are truly perfect.
 
-1. Ik wil graag een video bekijken maar wil tegelijkertijd mijn muziek beluisteren, maar wel meekrijgen wat er in het filmpje gebeurt, dus ik lees de captions.
-2. Ik kan niks zien want de zon schijnt op mijn scherm.
-3. Cognitieve beperking door bijvoorbeeld medicijnen voor klinische depressie.
+## What is Digital Accessibility?
 
-Je hebt wel ook mensen met een permanente beperking. Denk bijvoorbeeld aan mensen met ADHD.
+WCAG: Web Content Accessibility Guidelines. These outline how to do it right and include 50 criteria across four main categories. If these four areas are problematic on your website, it can be very harmful to the user. These are the four main categories.
 
-Bedenk wanneer je aan het ontwerpen bent wie je misschien gekozen hebt om buiten te sluiten. Je kunt bewust kiezen om bijvoorbeeld een gif te gebruiken die eigenlijk niet zo veilig is voor mensen met epilepsie, omdat ‘het gewoon fucking cool is,’ zoals Pim het heeft verwoord.. Ja, basically dat. Dat is iets waarmee elke designer/developer geconfronteerd wordt en je bent daar niet alleen in; er bestaan nauwelijks websites waarvan je kan zeggen dat ‘ie echt perfect is.
+### The Big Four
 
-## Wat is digitale toegankelijkheid?
+- **Perceivable**
+    - **1.4.2**: _Audio Control:_ Sound that lasts longer than three seconds must have a way to be paused/stopped or the volume lowered so people using a screen reader can still hear their screen reader. OR: You don’t realize your volume is at 100%, open an app, and can’t lower the volume.
+- **Operable**
+    - **2.1.2**: _No Keyboard Trap:_ When navigating with the keyboard, it should never happen that you get stuck in an element or part and can't navigate out of it.
+- **Understandable**
+    - **2.2.2**: _Pause, Stop, Hide:_ All moving, blinking, scrolling, or updating elements that start automatically; last more than 5 seconds; and are shown alongside other content; must be pausable, stoppable, or hideable.
+- **Robust**
+    - **2.3.1**: _Three Flashes or Below Threshold:_ No element on a webpage should flash three times or more within one second. Ensure it doesn’t play automatically, but ask for permission.
 
-WCAG: Web Content Accessibility Guidelines. Hierin staat hoe je het goed kan doen en omvat 50 criteria met 4 hoofdonderwerpen. Als deze vier onderwerpen fout gaan op jouw website is het heel schadelijk voor de gebruiker. Dit zijn de vier hoofdonderwerpen.
+### Tips for Managing This
 
-### The big four
+- **Low Hanging Fruit**
+    - **Perceivable**: _Can everyone perceive the content?_ Does it work on all browsers? Can you zoom in to 200% without everything breaking? Is the color contrast good?
+    - **Operable**: _Can everyone access and use the content?_ Can everyone access everything with the keyboard? Do you have enough time to fill out a form, or is there a timer that makes you rush? Is the purpose of each link clear? (With a screen reader, you can get a list of all links, and if they all say 'read here', you're not getting far).
+    - **Understandable**: _Can everyone understand this content?_ Do you use specific jargon?
+    - **Robust**: _Is the technology behind my digital product semantically correct?_ Screen readers can also provide a list of all headings, but if you make a <p> bold and use it as a heading, it won't appear in the list.
+- **The Best Tips of All**: Listen to your digital product with a screen reader, use your keyboard, and test with your target audience!
 
--   **Perceivable**
-    -   **1.4.2**: _Audio control:_ Geluid langer dan drie seconden moet een mogelijkheid zijn deze te pauzeren/stoppen of het volume te verlagen zodat mensen die een screenreader gebruiken hun screenreader nog wel kunnen horen. OF: Je hebt niet door dat je volume op 100% staat, opent een app, en je kunt het volume niet omlaag doen..
--   **Operable**
-    -   **2.1.2**: _No keyboard trap:_ Wanneer je met het toetsenbord navigeert mag het niet voorkomen dat je niet meer uit het element of deel kan navigeren.
--   **Understandable**
-    -   **2.2.2**: _Pause, stop, hide:_ Alle bewegende, knipperende, scrollende of actualiserende elementen die automatisch starten; langer dan 5 sec. duren en; parallel aan andere content getoond wordt; moet gepauzeerd, gestopt of verstopt kunnen worden.
--   **Robust**
-    -   **2.3.1**: _Three flashes or below threshold:_ Op webpagina’s mag er geen enkel element 3 keer of meer binnen een seconde flitsen. Zorg dat het niet automatisch afgespeeld wordt, maar vraag hier toestemming voor.
-
-### Tips om hiermee om te gaan
-
--   **Low hanging fruit**
-    -   **Perceivable**: _Kan de content door iedereen waargenomen worden?_ Werkt het op alle browsers? Kun je op 200% inzoomen zonder dat alles stuk gaat? Is het kleurcontrast goed?
-    -   **Operable**: _Kan de content door iedereen bereikt en gebruikt worden?_ Kan iedereen overal bij met het toetsenbord? Heb je genoeg tijd om een formulier in te vullen of zit er een timer op waardoor je moet haasten? Is het doel van elke link duidelijk? (Want met een screenreader kun je een lijstje krijgen met alle links en als ze allemaal ‘lees hier’ heten, kom je niet ver).
-    -   **Understandable**: _Kan deze content door iedereen begrepen worden?_ Gebruik je specifieke vakjargon?
-    -   **Robust**: _Is de techniek achter mijn digitale product semantisch correct opgebouwd?_ Want met screenreaders kun je ook een lijstje krijgen met alle headings, maar als jij een <p> bold maakt en als kopje gebruikt dan staat die er niet tussen.
--   **De beste tips van allen**: beluister jouw digitale product eens met een schermlezer, gebruik een keer je toetsenbord, en test met je doelgroep!
-
-<!-- Voor contact over stage: pim@digitaaltoegankelijk.nl -->
-
+<!-- For internship contact: pim@digitaaltoegankelijk.nl -->

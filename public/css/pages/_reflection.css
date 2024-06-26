@@ -20,3 +20,56 @@
     flex-direction: column;
     justify-content: center;   
 }
+
+.highlight {
+    color: var(--rosedev-blue);
+}
+
+.badum-tss {
+    position: relative;
+    color: var(--rosedev-blue);
+    text-decoration: underline;
+    cursor: pointer;
+}   
+
+
+.badum-tss::before {
+    content: '';
+    display: none;
+    position: absolute;
+    background-image: url('https://media1.tenor.com/m/Va9M6DvKygYAAAAC/ba-dum-tsss-drum.gif');
+    background-size: cover;
+    background-position: center;
+    width: 15vh;
+    height: 15vh;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.show-badum-tss::before {
+    display: inline-block;
+    opacity: 1;
+}
+
+.voorhoede::after {
+    content: '';
+    display: inline-block;
+    background-image: url('https://www.marketingxperts.nl/wp-content/uploads/2020/05/voorhoede-logo.png');
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+}
+
+.tweakers::after {
+    content: '';
+    display: inline-block;
+    background-image: url('https://play-lh.googleusercontent.com/ny8MGz3q7Sk_3wrvvG7ey8XsW0J0lKOZw4DG5nHSnL3JD0NzSyOa1dK4358-liN4iQ');
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+}

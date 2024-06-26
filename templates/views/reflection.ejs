@@ -9,42 +9,6 @@
         <script>hljs.highlightAll();</script>
         <link rel="stylesheet" href="/css/main.css" />
     </head>
-    <style>
-        .highlight {
-            color: var(--rosedev-blue);
-        }
-
-        .badum-tss {
-            position: relative;
-            color: var(--rosedev-blue);
-            text-decoration: underline;
-            cursor: pointer;
-        }   
-
-    
-        .badum-tss::before {
-            content: '';
-            display: block;
-            position: absolute;
-            background-image: url('https://media1.tenor.com/m/Va9M6DvKygYAAAAC/ba-dum-tsss-drum.gif');
-            background-size: cover;
-            background-position: center;
-            width: 100px;
-            height: 100px;
-            bottom: 100%;
-            right: 100%;
-            /* transform: translateX(-50%); */
-            opacity: 0;
-            transition: opacity 0.3s ease;
-
-        }
-
-            .show-badum-tss::before {
-            opacity: 1; /* Show pseudo-element */
-            }
-
-    
-    </style>
     <body class="blogpost-body">
         <%- include ('../partials/header.ejs') %>
         <%- include ('../partials/overlay.ejs') %>
@@ -62,60 +26,105 @@
                     <h3 class="author-name">Rose Mulazada</h3>
                     <section class="author-metadata-tags">
                         <h3 class="metadata">
-                            26/03 • readingTime TBA
+                            26/06 • 9 min read
                         </h3>
                     </section>
                 </section>
             </section>
             <section class="tags-container">
-                <p class="tag-item metadata">tags</p>
+                <p class="tag-item metadata">journey</p>
+                <p class="tag-item metadata">javascript</p>
+                <p class="tag-item metadata">theory</p>
+                <p class="tag-item metadata">performance</p>
+                <p class="tag-item metadata">scalability</p>
+                <p class="tag-item metadata">accessibility</p>
+                <p class="tag-item metadata">reflection</p>
             </section>
-            <!-- <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit cumque fuga eaque laudantium. Laborum in voluptate repudiandae! Suscipit alias inventore vero consequatur perferendis quidem quod a qui nostrum, quisquam distinctio!</p> -->
         </section>
 
         <section class="centered content padding">
             <p>
-                Where to begin as we recap the past five or six months? I wouldn't know. It's been such a ride, an amazing one, with so many great memories and lessons that I hardly know what to say. But I'll do my best.
+               Where to begin as we recap the past five or six months? It's been an incredible ride filled with amazing memories and valuable lessons. I'll do my best to capture it all.
             </p>
             <p>
                 Before I started this minor, before I ever signed up for it, I knew that it was undoubtedly the best opportunity to learn as a front-end developer. My passion had just recently ignited itself, especially following my experience at the minor Information Design on the Tech course, where I got my first taste of frameworks and API's, npm packages, libraries like D3.js and the like. Still, the assignment that we had wasn't your ordinary developer work. Besides, I barely understood what I was really doing. I needed more. I needed to get the <em>real</em> experience. I wanted to learn so, so much more than I knew then. And I knew that this was the right choice for achieving that.
             </p>
             <p>
-                As I mentioned before, I had once previously worked with SvelteKit, with NPM and all these things. But I have to say I was absolutely clueless when it came down to it. I was beginning to understand, kind of, but my understanding of the foundation was weak and thus I didn't really know what it was that I was doing or why it worked. What were methods? What were different types of variables, like strings and integers? What is the difference? What's a <code>GET</code>, <code>POST</code>, hell, what even is a <code>.env</code>? Or <code>Git</code>? I was absolutely lost. I needed a thorough understanding of the foundation to get anywhere. So this was my goal by signing up for the minor Web Design and Development.
+                As mentioned earlier, I had previously worked with tools like SvelteKit and npm, but I'll admit, I was still figuring things out. Understanding the foundational concepts—methods, variable types, the significance of terms like <code>GET</code>, <code>POST</code>, <code>.env</code>, and <code>Git</code> was crucial. I needed a solid grasp to progress. Thus, enrolling in the Web Design and Development minor became my next step.
             </p>
             <p>
-                I have to admit that I was slightly anxious about coming here, afraid that my lack of understanding would mean I'd fall behind easily. That fear did not trumph my excitement. And when we started classes, I was ecstatic. We were beginning with API's again! I had experimented with this, once before. Surely I'd be alright.
+               I have to say, I was a bit nervous coming here, worried I might struggle to keep up. But that didn't dampen my excitement at all. When classes kicked off and we dove into APIs again, I was pumped! I'd tinkered with them before, so I figured I'd be good to go.
             </p>
 
             <h2>Web Apps from Scratch</h2>
-            <p>Well, yes, but actually, no. I managed to retrieve my data almost instanteneously. Clearly I had remembered a lot from my previous experiences at my previous minor. Building the interface also went quite swimmingly, I think it still looks cool to this day. And on the outside, it <em>did</em> look really good. Which is why I was flabbergasted when I had my oral exam and the teacher told me that he could tell that I had used certain CSS units blindly, and that my scoping in the JavaScript was less than ideal. Back then, during that conversation, I felt kind of upset. Was I not cut out for this, after all? Is it too late to learn this much in the time we have left? How can I be more up to web developer standards?</p>
-            <p>This is what my teacher described to me as the <span class="highlight">Dunning-Kruger effect:</span> <em>The Dunning–Kruger effect is a cognitive bias in which people with limited competence in a particular domain overestimate their abilities.</em></p>
+            <p>Well, sort of. I quickly retrieved my data, drawing from past experiences in my previous minor. Building the interface felt smooth; it still looks cool to this day. I also learnt to work with branches and pull requests here. However, during my oral exam, I was taken aback when my teacher noted I'd used certain CSS units blindly, and my JavaScript scoping could have been better. Initially disheartened, I questioned my abilities. Was I cut out for this? Could I catch up in time to meet developer standards?</p>
+            <p>My teacher described this phenomemon among all developers as the <span class="highlight">Dunning-Kruger effect:</span> <em>"A cognitive bias where those with limited competence in a domain overestimate their abilities."</em></p>
+            
             <figure class="large">
-                <img style="width:100%; aspect-ratio: auto 1000 / 667; height: auto;" alt="A graph visualising the Dunning-Kruger effect." class="bg ku mg c"loading="eager" src="https://i.pinimg.com/736x/e3/28/97/e328977b031a0128cab8cd9a16f3b13d.jpg">
+                <img style="width:100%; aspect-ratio: auto 1000 / 667; height: auto;" alt="A graph visualizing the Dunning-Kruger effect." class="bg ku mg c" loading="eager" src="https://i.pinimg.com/736x/e3/28/97/e328977b031a0128cab8cd9a16f3b13d.jpg">
                 <figcaption class="metadata">The Dunning-Kruger Effect: Visualized</figcaption>
             </figure>
-            <p>Looks cool, doesn't it? Yeah, until you read it. Owch. Of course, he didn't mean it that way, but I went home thinking about this a lot. And after some time, it actually gave me faith. I recognise that I know little of development. But my (former..) confidence has to mean something, right? It means that I'm passionate (passionately stupid maybe haha <span onclick="badumTss()" class="badum-tss">badum tss</span>).  No but seriously. Did it not speak to my enthusiasm and my determination? I certainly felt determined after this, in any case. And so, when the other two subjects started, I tried my best to adhere to the best practices and to learn.
+
+            <p>Of course, he didn't mean or say it the way this illustration did, but I went home thinking about this a lot. I recognised that I knew less about development than my classmates. However, this critique ultimately spurred me on. Recognizing my gaps in knowledge didn't negate my passion; it fueled my determination. Even if sometimes I didn't just feel passionate, but passionately clueless. <span onclick="badumTss()" class="badum-tss">Badum tss</span>.</p>
+            <p>And so, when the next subjects came around, I tried my best to adhere to the best practices and to learn. I won't be talking about all subjects, but all did teach me valuable lessons in their own right. This will not delve too much about what we did for each subject, but more about what it taught me.</p>
+            <p>I still finished this project with a great grade. Even the teacher that gave me the critique recognised that I was still learning, and I'm glad that he gave me this feedback. It taught me to be a lot more critical of my work, and try to better myself as a developer. I began to write my code more consciously.</p>
+            <p>A small side note: A critique on my website back then was that when you scaled it down, the text and other elements did not scale accordingly. I have to say that I'm pleased with the responsiveness of this blog!</p>
+
+            <h2>What did you do?</h2>
+            <p>I immersed myself in developer media, learning more about CSS and JavaScript through YouTubers like Kevin Powell and WebDev Simplified. I downloaded extensions like DailyDev, exposing me to new articles with every tab. I even built a to-do app—a cliché junior developer project, but a testament to my eagerness to learn. A certain subject then brought my first breakthrough.</p>
+
+            <h2>Browser Technologies</h2>
+            <p>In this subject, co-taught by <a href="/weeklynerd/jeremykeith" class="hyperlink">Jeremy Keith</a>, I tackled a problem involving <a class="hyperlink" href="https://gist.github.com/rosemulazada/29379f3e0586491f235e0eb39d108aa5">scalable code that saves input values to localStorage</a>. Jeremy emphasized writing scalable and semantic code. Our conversations, bordering on philosophical, made me realize I want to build robust websites that work well for years and for all users. This includes focusing on accessibility, scalable functions, and performance. I'm ecstatic to say that soon I'll be following a six month internship at <a href="https://voorhoede.nl/en/" class="hyperlink voorhoede">De Voorhoede</a>, experts in performance and accessibility, where I will learn exactly this.</p>
+            <p>He was also kind enough to help me to write said scalable code, and encouraged me not only to improve upon it and share it as a Gist, but to blog about it as well (which I was already considering doing, but especially now that he had told me!). <em>(I'll either make a new blog or continue building off this one, we'll see, stay tuned).</em></p>
+            <p>As Communication and Multimedia Design students, we are taught from the very start to keep accessibility in mind and how to apply the best practices in design. This carries over in web development. It would truly be a shame to let my knowledge go to waste, especially considering there are not many developers like us who know so much about these things as juniors. It <em>is</em> something we can be proud of.</p>
+            <p>Browser Technologies emphasized the crucial importance of ensuring that anyone, regardless of their accessibility needs or device, can view and use a website. While we were aware of this concept, we truly grasped its significance when tasked with creating a tax inheritance form. Different contexts in which a website exists offer various challenges, but accessibility remains paramount.</p>
+            <strong>You often don't need to make drastic changes to achieve website accessibility, and it won't cost you anything if you build it from the ground up with accessibility in mind. Making it accessible <em>last</em> is what can cost you.</strong>
+            <p>At this point, I felt pretty good about where I was getting to be in the whole 'Dennis-Kruger' graph. I was a lot more knowledgeable than I was before and I could feel this in the way that I could read about something new on MDN or any other kind of docs and easily apply them. This meant my foundation was becoming a lot stronger.</p>
+
+            <h2>Human Centred Design</h2>
+            <p>Speaking of accessibility!</p>
+            <p>This was <em>the</em> accessibility subject next to Browser Tech. Here we got the amazing opportunity to develop an app for a disabled person, in my case I was appointed to the lovely Nicolette Besemer. Here's a snippet from my <code>README</code> from the project.</p>
+            <blockquote class="blockquote-left">
+                <p>
+                    Nicolette Besemer is president at Onbeperkt West, among others, and has a passion for geochemistry: this she also graduated from Utrecht University in 1972 where she also taught. She has also taught migrants. She organizes a lot around accessibility for others in her neighborhood. She has also been a geologist by profession and enjoys visiting physical wonders, this comes from a passion for nature.
+                </p>
+                <p>
+                    She has limited use of her limbs and relies on speech software and her drawing tablet to navigate the Web. This means she cannot use shortcuts, making certain actions difficult to perform, including cutting, pasting, selecting and generally navigating. This is our design challenge for her.
+                </p>
+                <p>
+                    She has not always been limited, once she became neurologically ill and since then she has been using a wheelchair to get around. She was not always passionate about helping people with disabilities, because she found she had more important things to focus on than simply being disabled; but she describes herself as a people person to the core, so who is she not to help when people are in need? This is how she ended up getting involved in taking the first steps towards accessibility in the city, and she has achieved amazing things since then. Nicolette is a pioneer in accessibility in Amsterdam, and Amsterdammer of the Year in 2016 as well as Knight of the Order of Orange-Nassau, as dubbed by the King of the Netherlands himself!
+                </p>
+            </blockquote>
+            <p>Testing with her weekly and seeing her immense joy and gratitude was eye-opening. It highlighted the need for better web accessibility and the impact of even small changes. A little goes <em>such a long way.</em></p>
+
+            <h2>API & Meesterproef</h2>
+            <p>API is the subject that truly resonated with me, igniting my passion for &lt;JavaScript3 and &lt;server-side development3. While I regularly practice with CSS and its latest technologies, nothing captivates me like JavaScript. The Meesterproef project illuminated the art of writing scalable and compact code using helper functions. I've been more consciously structuring my code as well as more consciously naming my variables, parameters and functions. I think about the scopes a lot before I write something.</p>
+            <p>Now, having worked not only with Express but also SvelteKit servers, I feel ready to take on even more challenges if anything! I've heard often that..</p>
+            <blockquote>When you master JavaScript, you can write just about anything (JavaScript related).</blockquote>
+            <p>.. and though I haven't mastered JavaScript just yet, I do feel that because of my newfound strong understanding of the foundation, I can take on a lot more challenges a lot more confidently, and understand new concepts a lot faster.</p>
+            <p>This excites me and I am eager to become an even stronger developer.</p>
+
+            <h2>Weekly Nerd</h2>
+            <p>
+                You can read all about the valuable lessons the weekly nerds have taught me in my <a href="/weeklynerd" class="hyperlink">blogs.</a> Something I wanted to mention was something I've learnt while looking more deeply into web developer standards.
             </p>
+            <p>I had only heard of this before but did not know it was possible in vanilla CSS; I experimented with using components in my CSS. This practice has enhanced my attention to detail and working this way is a lot more efficient than scrolling through thousands of lines of CSS trying to find a certain class. I'm especially fond of making 'components' like buttons or blockquotes and 'typography' files.</p>
+            <figure class="large">
+                <img style="width:100%; aspect-ratio: auto 1000 / 667; height: auto;" alt="A code editor showing how I used components in CSS. I have my files on the side and the code on the right." class="bg ku mg c" loading="eager" src="/img/component-css.png">
+                <figcaption class="metadata">My project</figcaption>
+            </figure>
+            <p>(If you spot that it's called 'weekly nerd redo', this is because I've re-designed this site multiple times out of sheer perfectionism).</p>
+
+            <h2>Conclusion</h2>
+            <p>Regarding the Dunning-Kruger effect, I’d would want to say that I'm on the Plateau of Sustainability because I've made significant progress and feel more confident in my abilities now, and I know that this is a very complex field. However, I think that I still have a lot to learn before I can say that. I'm comfortable acknowledging that I’m not there yet, and I shouldn’t expect to be either. I’ve come a long way from not knowing what <code>fetch</code> is or how to use <code>Git</code> to working with face-tracking libraries and implementing a database into a server-side in frameworks with ease.</p>
+            <p>I’m confident in my current knowledge and aware of the areas where I still have more to learn, and that’s perfectly okay. Rome wasn’t built in a day. 
+
+            I look back at my work from this minor with immense pride in myself and my teammates, in the progress I’ve made, and in the skills that have become second nature to me. I’m proud of discovering what I want to do in the future and what truly makes me happy. Seeing how much I’ve grown over the past months, I’m excited for what the future holds. I can’t wait to see where I’ll be next month, and I’m especially looking forward to the nine months ahead at the amazing companies <a href="https://tweakers.nl/" class="hyperlink tweakers">Tweakers</a> and <a class="hyperlink voorhoede" href="https://www.voorhoede.nl/en/">De Voorhoede</a> starting in September. I’m a fast and eager learner - that much has become incredibly clear over the past five months - and I’m ready for the challenges ahead.</p>
 
         </section>
 
         <%- include ('../partials/footer.ejs') %>
 
         <script src="/js/scripts.js"></script>
-        <script>
-            function badumTss() {
-                const audio = new Audio('/audio/badum-tss.mp3');
-                audio.play();
-
-                const badumTssElement = document.querySelector('.badum-tss');
-
-                badumTssElement.classList.add('show-badum-tss');
-
-                audio.addEventListener('ended', () => {
-                    badumTssElement.classList.remove('show-badum-tss');
-            });
-            }
-
-        </script>
     </body>
 </html>

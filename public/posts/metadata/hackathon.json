@@ -3,6 +3,6 @@
     "profilepic": "https://media.licdn.com/dms/image/C4D03AQHPBHw4pCicWQ/profile-displayphoto-shrink_200_200/0/1606210919034?e=2147483647&v=beta&t=s7WoBES_WgWQMitDGrVLhuLpkZsZOLTOBbe1Rke2Ylc",
     "topic" : "On visualizing CSS day-ta",
     "date": "25/03",
-    "tags": ["css", "sveltekit", "api", "css day"],
+    "tags": ["css", "sveltekit", "api", "cssday"],
     "desc": "The Hackathon is a three day speedrun to build an application that visualises CSS day data (or CSS Day-ta, as Krijn Hoetmer has dubbed it). In this time we need to utilise the CSS dayta API and make literally whatever we want. The best submission wins. May the odds be ever in your favor, I guess."
 }

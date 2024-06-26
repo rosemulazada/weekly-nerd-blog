@@ -1,52 +1,52 @@
 ## Who is Fenna?
--   Creative front end developer
--   Momenteel werkzaam bij Bakken en Baeck
--   Land of Ride (nice inspo website).
--   Heeft gewerkt bij Phantom (cryptocurrency)
--   Haar 'setup':
-    -   Emotion: CSS-in-JS library
-    -   Vercel for deploying
-    -   Sanity CMS
-    -   React
-        -   Framer motion als animatie library voor React
-        -   React-focus-lock: Beheert de focus binnen een opgegeven bereik in een React-applicatie, zoals een modal venster, om de focus te beperken voor toegankelijkheid.
-        -   React-aria-components: Een library met toegankelijke React-componenten die voldoen aan ARIA-standaarden voor het bouwen van inclusieve webapplicaties.
+- Creative front end developer
+- Currently working at Bakken en Baeck
+- Land of Ride (nice inspo website).
+- Worked at Phantom (cryptocurrency)
+- Her 'setup':
+  - Emotion: CSS-in-JS library
+  - Vercel for deploying
+  - Sanity CMS
+  - React
+    - Framer motion as animation library for React
+    - React-focus-lock: Controls focus within a specified range in a React application, such as a modal window, to restrict focus for accessibility.
+    - React-aria-components: A library of accessible React components that adhere to ARIA standards for building inclusive web applications.
 
-## Fenna, Phantom en toegankelijkheid
+## Fenna, Phantom and accessibility
 
--   Toegankelijkheid was geen eis maar was de eigen motivatie van Fenna
--   In het professionele leven word toegankelijkheid niet serieus genomen en er wordt overheen gekeken. Esthetiek en vloeiende animaties krijgen vaak alle aandacht en prioriteit.
+- Accessibility was not a requirement but was Fenna's own motivation
+- In professional life, accessibility is not taken seriously and is overlooked. Aesthetics and smooth animations often receive all the attention and priority.
 
-### Wat ze altijd _in ieder geval_ meeneemt in haar werk
+### What she always _at least_ brings into her work
 
--   Focus state voor keyboard users -> `:focus-visible.`
-    -   `:focus-visible` doet het alleen met een keyboard focus of iets dat niet met touch input te maken heeft, zoals bijv in JavaScript focus aanroepen
--   aria-attributes
--   toegankelijke carousels
--   focus guards en esc key configuratie voor modals en overlays
--   goede kleurcontrasten, lettergroottes en lijnlengtes
-    -   Hiervoor gebruikt zij Lighthouse audit: een kleurcontrast checker.
-    -   Ook in DevTools krijg je een waarschuwing als het contrast niet goed genoeg is.
+- Focus state for keyboard users -> `:focus-visible.`
+ - `:focus-visible` only works with a keyboard focus or something that has nothing to do with touch input, such as calling focus in JavaScript
+- aria attributes
+- accessible carousels
+- focus guards and esc key configuration for modals and overlays
+- good color contrasts, font sizes and line lengths
+ - She uses Lighthouse audit for this: a color contrast checker.
+ - You will also receive a warning in DevTools if the contrast is not good enough.
 
-### Aria-attributes: deep dive
+### Aria attributes: deep dive
 
-1. `aria-controls`: Dit attribuut wordt gebruikt om de relatie tussen twee elementen aan te geven waarbij het ene element controle heeft over het andere. Het element dat de aria-controls heeft, beïnvloedt of toont het gecontroleerde element. Dit kan handig zijn voor bijvoorbeeld tabbladen, waar één tabblad de inhoud van een ander tabblad controleert.
-2. `aria-live`: Dit attribuut wordt gebruikt om aan te geven hoe dynamische veranderingen in de inhoud van een element moeten worden aangekondigd aan screenreaders. Het heeft drie waarden:
-    - `off`: Er worden geen automatische aankondigingen gedaan.
-    - `polite`: Aankondigingen worden gedaan als er een natuurlijke onderbreking in de spraak van de screenreader is.
-    - `assertive`: Aankondigingen worden onmiddellijk gedaan, zelfs als er sprake is van actieve spraak. (Deze vindt Fenna best heftig en heeft ze ook nooit gebruikt/hoeven gebruiken).
-3. `aria-atomic`: Dit attribuut werkt samen met `aria-live`. Als `aria-atomic` is ingesteld op `true`, betekent dit dat de gehele inhoud van het gecontroleerde element moet worden beschouwd als één enkele wijziging. Zonder `aria-atomic` zou alleen de gewijzigde informatie worden aangekondigd.
-    - In het voorbeeld wat Fenna heeft gegeven wordt `aria-live` gebruikt om aan te geven dat dynamische veranderingen onmiddellijk moeten worden aangekondigd aan screenreaders. Dit is belangrijk in situaties waarin de inhoud van een element (bijvoorbeeld een score) dynamisch kan veranderen, en `aria-atomic` wordt mogelijk gebruikt om ervoor te zorgen dat de volledige inhoud als één wijziging wordt beschouwd.
+1. `aria-controls`: This attribute is used to indicate the relationship between two elements where one element has control over the other. The element that has the aria controls affects or displays the controlled element. This can be useful for tabs, for example, where one tab checks the contents of another tab.
+2. `aria-live`: This attribute is used to specify how dynamic changes in an element's content should be announced to screen readers. It has three values:
+ - `off`: No automatic announcements are made.
+ - `polite`: Announcements are made when there is a natural break in the screen reader's speech.
+ - `assertive`: Announcements are made immediately, even when there is active speech. (Fenna finds this quite intense and has never used/had to use it).
+3. `aria-atomic`: This attribute works together with `aria-live`. If `aria-atomic` is set to `true`, this means that the entire contents of the checked element should be treated as a single change. Without aria-atomic, only the changed information would be announced.
+ - In the example Fenna gave, `aria-live` is used to indicate that dynamic changes must be announced immediately to screen readers. This is important in situations where the content of an element (e.g. a score) may change dynamically, and `aria-atomic` may be used to ensure that the entire content is treated as one change.
 
 ### Alt image generator
-Omdat toegankelijkheid zo weinig serieus genomen wordt door developers, heeft ze geprobeerd om een methode te achterhalen waarmee bijvoorbeeld alt teksten automatisch gegenereerd kunnen worden. Maar helaas is AI nog niet ver genoeg om nuttige alt tekst toe te voegen, sterker nog, in het voorbeeld dat ze toonde was het heel erg het tegenovergestelde.. (Een afbeelding van een man in een rolstoel die voor een trap staat, met de alt tekst 'man in wheelchair goes up staircase.' Klopt niet helemaal).
+Because accessibility is not taken seriously by developers, she tried to find a method with which, for example, alt texts can be automatically generated. But unfortunately AI is not yet advanced enough to add useful alt text, in fact, in the example she showed it was very much the opposite.. (An image of a man in a wheelchair standing in front of a staircase, with the alt text 'man in wheelchair goes up staircase.' Not quite correct).
 
-## Laatste tips en dingen om mee te nemen qua toegankelijkheid
+## Latest tips and things to take with you in terms of accessibility
 
--   Alle autoplay videos moet gepauzeerd kunnen worden
-    **- Gebruik zelf een screenreader om te testen of je website echt toegankelijk is of niet!**
--   Voeg een 'skip to main content' button toe, dit hebben alle belangrijkste websites zoals bijvoorbeeld YouTube. - Uberhaubt content kunnen skippen is belangrijk: stel je hebt een carousel van 20 images, je wilt niet dat de user daar verplicht doorheen moet. - Extra puntje: als je een carousel hebt, moet de screenreader de elementen die off-screen staan niet oplezen.
+- All autoplay videos must be able to be paused
+ **- Use a screen reader yourself to test whether your website is really accessible or not!**
+- Add a 'skip to main content' button, which all major websites have, such as YouTube. - Being able to skip content is important: suppose you have a carousel of 20 images, you don't want the user to have to go through it. - Extra point: if you have a carousel, the screen reader should not read the elements that are off-screen.
 
-## Reflectie
+## Reflection
 
-Ik heb altijd veel waarde gehecht aan toegankelijkheid en probeer het altijd mee te nemen in mijn projecten, maar ik had geen idee was dat er zoveel dingen waren waar ik niet vanaf wist of waarvan ik niet wist dat daar rekening mee gehouden moet worden voor screenreaders, bijvoorbeeld met de `aria-live.` Ik heb al eerder gehoord dat in het bedrijfsleven de semantiek en toegankelijkheid vaak vergeten worden (of juist expres genegeerd worden), maar ik wist niet hoe erg het precies was. Ik zal zeker proberen om, wanneer ik een website design, voorafgaand aan het coderen rekening zal houden met de puntjes die zij hier heeft toegelicht; ik vind het fijn dat ze een lijstje heeft meegegeven met dingen waar ze altijd naar kijkt, dit helpt vor mij om te beginnen met meer bewust zijn over toegankelijkheid.
+I've always cared about accessibility and always try to include it in my projects, but I had no idea there were so many things I didn't know about or that needed to be taken into account for screen readers, for example with the `aria-live.` I have heard before that in business semantics and accessibility are often forgotten (or ignored on purpose), but I didn't know exactly how bad it was. I will certainly try, when designing a website, to take into account the points she has explained here before coding; i

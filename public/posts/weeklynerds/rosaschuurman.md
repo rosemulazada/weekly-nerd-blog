@@ -1,12 +1,6 @@
-# Rosa Schuurman
-
 Unfortunately, I could not be present for this weekly nerd as I got very sick the previous night, which is a bummer because I was very enthusiastic about the topic. It's not much to do with what we do at the minor but that didn't mean it wasn't interesting to hear about how somebody else utilises electronics to suit _their_ goal. Or rather, how they bend it in its regular state.
 
 Rosa told a lot about circuit bending, and so I did some digging into this topic to get an idea of what she was talking about.
-
-However, I did want to know who she was first.
-
-Rosa has done the same study as myself, Commnication and Multimedia Design, and is now taking a master's program on experiemental publishing. No wonder then that she would be so creatively inclined using electronics! Of course she has taken a different path from the rest of us, a very interesting one. I asked some friends who were able to attend about her and they shared with me that she worked a lot with UX React as a digital creative. It's interesting to see the different paths of CMD students. It really is such a broad study, you can branch into anything you want.
 
 ## Circuit bending
 
@@ -23,14 +17,14 @@ Sam takes it to the next level with circuit-bending: take fourty-four furbies, a
 
 I felt like this gave me enough of an idea of what circuit-bending entailed, but I wanted to know what Rosa was trying to tell us about it.
 
-[Source](https://www.youtube.com/watch?v=4G4TChPJE1o)
+<a href="https://www.youtube.com/watch?v=4G4TChPJE1o" class="hyperlink">Source</a>
 
 ### Rosa's message
 Something I'm noticing as I look further into circuit-bending and its community is that the people who partake in it started once just because they thought it would be fun, but it quickly evolved into something more. Rosa said she also felt this. After asking around a bit about this talk, I found two things; she mentioned that breaking the norm is what is really sought after in circuit-bending which I could admire, but also that she mentioned something more directly linked to development that I could relate to.
 
-She mentioned that frameworks did not inherently matter. Whether you use React, Svelte, Vue.js, whatever it be - it's about what you make of it, it's about the places where you intern being enjoyable and comfortable - something that she apparently really emphasized - and something that is so relevant to us now that we are also applying for internships and trying to find what works for us.
+She mentioned that frameworks did not inherently matter. Whether you use React, Svelte, Vue.js, whatever it be - it's about what you make of it, it's about the places where you intern being enjoyable and comfortable - something that she apparently really emphasized - and something that is so relevant to us now that we are also applying for internships and trying to find what works for us. **Circuit bending can be such a great metaphor for web development practices,** though you'd probably never have thought of it before. You have to find your own way.
 
-[This is a hilarious video](https://www.youtube.com/watch?v=4G4TChPJE1o) I stumbled upon while I was digging on the topic. Albeit maybe a little bit horrifying, at the same time.
+<a href="https://www.youtube.com/watch?v=4G4TChPJE1o)" class="hyperlink">This is a hilarious video</a> I found while researching this topic, albeit a little horrifying as well..
 
 ## The conclusion
 
