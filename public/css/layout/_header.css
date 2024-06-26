@@ -42,7 +42,8 @@ header {
 }
 
 .bar1 {
-    width: 60%;
+    margin-left: auto;
+    width: 100%;
 }
 
 .bar2 {
