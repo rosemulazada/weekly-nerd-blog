@@ -8,7 +8,7 @@ footer {
     justify-content: center;
 
     padding-block: 3vh;
-    padding-inline: 3vw;
+    padding-inline: 6vw;
     margin-top: 8vh;
 }
 
@@ -27,7 +27,7 @@ footer {
 
 .footer-author-content {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     gap: 2.5%;
 }
