@@ -14,10 +14,6 @@ body {
     color: var(--regular-text-light);
 }
 
-code {
-    font-size: 1.5rem;
-}
-
 h1, h2, 
 h3, h4,
 h5, h6,
@@ -78,7 +74,7 @@ h4 {
 }
 
 code {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 }
 
 figcaption {
@@ -118,5 +114,9 @@ ul, ol {
     h1 {
         font-size: 4.2rem;
         margin-block: 2.5vh 2.5vh;
+    }
+
+    code {
+        font-size: 1.5rem;
     }
 }
