@@ -13,6 +13,12 @@ header {
 
 .home-link {
     font-family: 'Helvetica Neue', 'Roboto', sans-serif;
+    font-size: 1.9rem;
+}
+
+li:has(.home-link) {
+    display: flex;
+    align-items: center;
 }
 
 .menu-toggle {
