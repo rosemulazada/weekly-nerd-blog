@@ -14,7 +14,7 @@ body {
 
 figure {
     margin-top: 5vh;
-    padding: 1vh 0;
+    padding: 2.5vh 0;
 }
 
 .centered > :first-of-type:not(h3, ol, ul, p:not(.desc), h1, pre, h4, blockquote),
@@ -80,9 +80,7 @@ ul:not(.filter-container, header nav ul), ol {
 
     figure.large {
         width: 100%;
-        padding: 0 4.5vw;
-
-        /* > */
+        padding: 2vh 4.5vw;
     }
 
 }

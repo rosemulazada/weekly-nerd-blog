@@ -19,6 +19,10 @@
     margin-bottom: 1.5vh;
 }
 
+.kickstart-h2 {
+    padding-bottom: 2vh;
+}
+
 .kickstart-container {
     gap: 2em;
 }
@@ -50,7 +54,7 @@
     }
 
     .kickstart-h2 {
-        padding-block: 5vh;
+        padding-block: 5vh 6vh;
     }
 
     .kickstart-img {
